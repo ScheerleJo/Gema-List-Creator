@@ -9,3 +9,8 @@ Grober Ablauf:
 - Wenn nicht, zur Liste mit Dauer hinzufügen.
 - Wenn doch die Dauer zur bisherigen Dauer addieren
 - Liste in Excel Tabelle übertragen
+
+Possible Excel Packages
+- https://www.npmjs.com/package/excel4node
+- https://www.npmjs.com/package/read-excel-file
+- https://www.npmjs.com/package/write-excel-file

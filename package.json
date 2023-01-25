@@ -1,0 +1,30 @@
+{
+  "name": "gema_list_creator",
+  "version": "1.0.0",
+  "description": "A tool to automatically gather all music clips from a premiere project to an excel table",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScheerleJo/Gema-List-Creator"
+  },
+  "keywords": [
+    "gema",
+    "excel",
+    "npm",
+    "nodejs",
+    "premiere",
+    "pro",
+    "adobe"
+  ],
+  "author": "Josia Scheerle",
+  "license": "MIT",
+  "dependencies": {
+    "write-excel-file": "^1.4.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

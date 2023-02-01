@@ -11,6 +11,6 @@ Grober Ablauf:
 - Liste in Excel Tabelle übertragen
 
 Possible Excel Packages
-- https://www.npmjs.com/package/excel4node
-- https://www.npmjs.com/package/read-excel-file
-- https://www.npmjs.com/package/write-excel-file
+
+- [Read-Excel-File](https://www.npmjs.com/package/read-excel-file) don't know if needed
+- [Write-Excel-File](https://www.npmjs.com/package/write-excel-file) working already

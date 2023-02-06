@@ -20,20 +20,22 @@ const HEADER_ROW = [
     }
 ]
 
-const DATA_ROW1 = [
-    { value: 'Avalanche' },
-    { value: 'Bring Me The Horizon' },
-    { value: 'Spotify' },   
-    { value: '100s' }
+//title | Artist | Domain | Duration
+let title = 'Avalanche'
+let artist = 'Bring Me The Horizon'
+let domain = 'Spotify'
+let duration = '100s'
+
+const DATA_ROW = [ { value: title }, { value: artist },{ value: domain },{ value: duration }]
+
+let data:Array<Array<Object>> = [
+    HEADER_ROW
 ]
+
+data.push(DATA_ROW)
 // const HEADER_ROW = ['Titel', 'Interpret', 'Domain', 'Dauer']
 // const DATA_ROW1 = ['Avalanche', 'Bring Me The Horizon', 'Spotify', '100s']
 
-var data = [
-    HEADER_ROW,
-    DATA_ROW1
-]
-
 xlWrite(data, {
-    filePath: "text.xlsx"
+    filePath: "test.xlsx"
 })

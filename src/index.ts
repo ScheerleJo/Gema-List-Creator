@@ -1,4 +1,5 @@
-var xlWrite = require('write-excel-file/node')
+const xlWrite = require('write-excel-file/node')
+const fs = require('fs')
 
 const HEADER_ROW = [
     {
@@ -29,28 +30,44 @@ let duration:Number
 let data:Array<Array<Object>> = [
     HEADER_ROW
 ]
-for (let i = 0; i < clips.length; i++ ) {
-    
-    let currentClip = clips[i];
+//! PSEUDO-CODE
 
-    //! PSEUDO-CODE
-    /* if (clip[i].origin != "project-directory/**_Musik") {
-        return
-    }
-    title = currentClip.name;
-    artist = currentClip.artist;
-    domain = '';
-    duration = currentClip.outPoint - currentClip.inpoint;           //Format to seconds
-    if(data.exist(currentClip.name){
-        data[data.getIndexForClip(currentClip.name)].duration += duration;
-        return;
-    }
-    const DATA_ROW = [ { value: title }, { value: artist },{ value: domain },{ value: duration }];
-    
-    data.push(DATA_ROW);
-    */
+/*
+let project = app.project
+clips = project.clips
 
-}
+fs.readdir(project.directory +  '/**_Musik', function(error, files){        // Project-Directory is Standard in .../01_Premiere --> has to be removed
+
+    if (error) {
+        return alert('Unable to scan directory: ' + error);
+    } 
+
+    let i:number = 0
+
+    files.array.forEach(element => {
+        let currentClip = clips[i]
+
+        if (element != currentClip.origin) {
+            return
+        }
+        
+        title = currentClip.name
+        artist = currentClip.artist
+        domain = ''
+        duration = currentClip.outPoint - currentClip.inpoint           //Format to seconds
+        if(data.exist(currentClip.name){
+            data[data.getIndexForClip(currentClip.name)].duration += duration
+            return;
+        }
+        const DATA_ROW = [ { value: title }, { value: artist },{ value: domain },{ value: duration }]
+        
+        data.push(DATA_ROW)
+
+        i++
+    });
+
+})
+*/
 
 xlWrite(data, {
     filePath: "test.xlsx"
